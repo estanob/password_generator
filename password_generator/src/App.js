@@ -1,5 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import './styles/output.css'
+import PasswordParameters from './components/password_parameters.jsx';
+import Output from './components/output.jsx';
 
 function App() {
   return (
@@ -18,6 +21,8 @@ function App() {
           Learn React
         </a>
       </header>
+      <PasswordParameters />
+      <Output />
     </div>
   );
 }
