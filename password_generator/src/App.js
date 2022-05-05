@@ -23,6 +23,25 @@ function App() {
       </header>
       <PasswordParameters />
       <Output />
+      <footer>
+        <div>
+          <a href="https://github.com/estanob" 
+            target="_blank" 
+            rel="noopener noreferrer">
+              Github
+          </a>
+          <a href="https://linkedin.com/in/estanob" 
+            target="_blank" 
+            rel="noopener noreferrer">
+              LinkedIn
+          </a>
+          <a href="https://brandonestano.netlify.app" 
+            target="_blank" 
+            rel="noopener noreferrer">
+              Portfolio
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }
