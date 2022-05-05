@@ -3,9 +3,9 @@ import GenerateButton from './generate_button.jsx';
 
 const PasswordParameters = () => {
 
-  
+
   return (
-    <div>
+    <div className="parameters">
       <h1>Password Generator</h1>
       <div className="parameter-div">
         <p>Password Length:</p>
@@ -13,18 +13,50 @@ const PasswordParameters = () => {
           <p>Include Symbols:</p>
           <label>
             <input
-              type="radio"
-              value="length"
-              name="six"
-              placeholder="6"
-              readOnly={true} />
+              type="checkbox"
+              name="symbols" />
           </label>
         </div>
-        <p>Include Numbers:</p>
-        <p>Include Lowercase Characters:</p>
-        <p>Include Uppercase Characters:</p>
-        <p>Exclude Similar Characters:</p>
-        <p>Exclude Ambiguous Characters:</p>
+        <div>
+          <p>Include Numbers:</p>
+          <label>
+            <input
+              type="checkbox"
+              name="numbers" />
+          </label>
+        </div>
+        <div>
+          <p>Include Lowercase Characters:</p>
+          <label>
+            <input
+              type="checkbox"
+              name="lowercase" />
+          </label>
+        </div>
+        <div>
+          <p>Include Uppercase Characters:</p>
+          <label>
+            <input
+              type="checkbox"
+              name="uppercase" />
+          </label>
+        </div>
+        <div>
+          <p>Exclude Similar Characters:</p>
+          <label>
+            <input
+              type="checkbox"
+              name="similar" />
+          </label>
+        </div>
+        <div>
+          <p>Exclude Ambiguous Characters:</p>
+          <label>
+            <input
+              type="checkbox"
+              name="ambiguous" />
+          </label>
+        </div>
       </div>
       <GenerateButton />
     </div>
